@@ -2,17 +2,67 @@
 layout: default
 title: Pica
 ---
-<div class="row">
-  <div class="one"></div>
-  <div class="eleven"></div>
-  <div class="two"></div>
-  <div class="ten"></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+<div class="row example">
+  <div class="one"> 
+    <p>One</p>
+  </div>
+
+  <div class="eleven omega">
+    <p>Eleven</p>
+  </div>
+
+  <div class="two">
+    <p>Two</p>
+  </div>
+
+  <div class="ten omega">
+    <p>Ten</p>
+    <p>@include omega();</p>
+  </div>
+
+  <div class="three">
+    <p>Three<p/>
+  </div>
+
+  <div class="nine omega">
+    <p>Nine</p>
+    <p>@include omega();</p>
+  </div>
+
+  <div class="four">
+    <p>Four</p>
+  </div>
+
+  <div class="eight omega">
+    <p>Eight</p>
+    <p>@include omega();</p>
+  </div>
+
+  <div class="five">
+    <p>Five</p>
+  </div>
+
+  <div class="seven omega">
+    <p>Seven</p>
+    <p>@include omega();</p>
+  </div>
+  
+  <div class="six">
+    <p>Six</p>
+  </div>
+  
+  <div class="six">
+    <p>Six</p>
+    <p>:last-child</p>
+  </div> 
+</div>
+
+<div class="row example">
+  <div class="twelve">
+    <div class="six">
+     <div class="three"></div>
+     <div class="three"></div>
+    </div>
+    <div class="six"></div>
+  </div>
 </div>

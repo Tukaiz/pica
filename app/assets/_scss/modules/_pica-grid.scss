@@ -1,17 +1,31 @@
 .row { 
   @include outer-container; @include clearfix;
-  .one { @include span-columns(1 of 12); }
-  .two { @include span-columns(2 of 12); }
+  .one { @include span-columns(1); }
+  .two { @include span-columns(2); }
+  .three { @include span-columns(3); }
+  .four { @include span-columns(4); }
+  .five { @include span-columns(5); }
+  .six { @include span-columns(6); }
+  .seven { @include span-columns(7); }
+  .eight { @include span-columns(8); }
+  .nine { @include span-columns(9); }
+  .ten { @include span-columns(10); }
+  .eleven { @include span-columns(11); }
+  .twelve { @include span-columns(12); }
 
-  .ten { @include span-columns(10 of 12); @include omega(); }
-  .eleven { @include span-columns(11 of 12); @include omega(); }
+  .omega {
+    @include omega();
+  }
 }
 
 
-.row {
+.example{
+  margin-bottom: $base-line-height;
+  background: rgba(240, 240, 240, .9);
   div{ 
     height: 96px;
-    background: #222;
-    border: 1px solid #f1f1f1;
+    background: rgba(240, 240, 240, .9);
+    border: 1px solid rgba(0, 200, 255, 1);
+    display: block;
   }
 }
