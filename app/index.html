@@ -3,30 +3,29 @@ layout: default
 title: Pica
 ---
 <div class="row example">
-  <div class="one"> 
+  <h2>The Grid</h2>
+  <div class="one t-two"> 
     <p>One</p>
   </div>
 
-  <div class="eleven omega">
+  <div class="eleven t-two omega">
     <p>Eleven</p>
   </div>
 
-  <div class="two">
+  <div class="two t-four">
     <p>Two</p>
   </div>
 
-  <div class="ten omega">
+  <div class="ten t-four omega">
     <p>Ten</p>
-    <p>@include omega();</p>
   </div>
 
-  <div class="three">
-    <p>Three<p/>
+  <div class="three t-one">
+    <p>Three</p>
   </div>
 
-  <div class="nine omega">
+  <div class="nine t-three omega">
     <p>Nine</p>
-    <p>@include omega();</p>
   </div>
 
   <div class="four">
@@ -35,7 +34,6 @@ title: Pica
 
   <div class="eight omega">
     <p>Eight</p>
-    <p>@include omega();</p>
   </div>
 
   <div class="five">
@@ -44,7 +42,6 @@ title: Pica
 
   <div class="seven omega">
     <p>Seven</p>
-    <p>@include omega();</p>
   </div>
   
   <div class="six">
@@ -53,16 +50,45 @@ title: Pica
   
   <div class="six">
     <p>Six</p>
-    <p>:last-child</p>
   </div> 
 </div>
 
 <div class="row example">
-  <div class="twelve">
-    <div class="six">
-     <div class="three"></div>
-     <div class="three"></div>
+  <div class="twelve clear">
+    <h2>Nested Columns</h2>
+    <p>Nested columns are grids of the relative resolution.</p>
+    <p>Each container is broken down into a 12 grid base.</p>
+    <p>12 columns </p>
+
+    <div class="six clear">
+      <p>Six</p>
+ 
+      <div class="six">
+        <p>Six</p>
+      </div>
+     
+      <div class="six omega">
+        <p>Six</p>
+      </div>
     </div>
-    <div class="six"></div>
+    
+    <div class="six clear">
+      <p>Six</p>
+      <div class="three">
+        <p>Three</p>
+      </div>
+      
+      <div class="three">
+        <p>Three</p>
+      </div>
+      
+      <div class="three">
+        <p>Three</p>
+      </div>
+      
+      <div class="three">
+        <p>Three</p>
+      </div>
+    </div>
   </div>
 </div>

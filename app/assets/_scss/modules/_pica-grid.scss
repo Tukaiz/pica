@@ -1,31 +1,46 @@
 .row { 
   @include outer-container; @include clearfix;
-  .one { @include span-columns(1); }
-  .two { @include span-columns(2); }
-  .three { @include span-columns(3); }
-  .four { @include span-columns(4); }
-  .five { @include span-columns(5); }
-  .six { @include span-columns(6); }
-  .seven { @include span-columns(7); }
-  .eight { @include span-columns(8); }
-  .nine { @include span-columns(9); }
-  .ten { @include span-columns(10); }
-  .eleven { @include span-columns(11); }
-  .twelve { @include span-columns(12); }
 
-  .omega {
-    @include omega();
+  .one { @include span-columns(1 of 12); }
+  .two { @include span-columns(2 of 12); }
+  .three { @include span-columns(3 of 12); }
+  .four { @include span-columns(4 of 12); }
+  .five { @include span-columns(5 of 12); }
+  .six { @include span-columns(6 of 12); }
+  .seven { @include span-columns(7 of 12); }
+  .eight { @include span-columns(8 of 12); }
+  .nine { @include span-columns(9 of 12); }
+  .ten { @include span-columns(10 of 12); }
+  .eleven { @include span-columns(11 of 12); }
+  .twelve { @include span-columns(12 of 12); }
+
+  @include media($tablet) {
+    .t-one { @include span-columns(1 of 4); }
+    .t-two { @include span-columns(2 of 4); }
+    .t-three { @include span-columns(3 of 4); }
+    .t-four { @include span-columns(4 of 4); }
   }
+
+  @include media($mobile) {
+    .m-one { @include span-columns(1 of 2); }
+    .m-two { @include span-columns(2 of 2); }
+  }
+
+  //helpers
+  .omega { @include omega(); }
+  .clear { @include clearfix; }
 }
 
 
 .example{
   margin-bottom: $base-line-height;
   background: rgba(240, 240, 240, .9);
+
   div{ 
-    height: 96px;
+    @include clearfix;
     background: rgba(240, 240, 240, .9);
     border: 1px solid rgba(0, 200, 255, 1);
     display: block;
+    padding: em(10);
   }
 }
