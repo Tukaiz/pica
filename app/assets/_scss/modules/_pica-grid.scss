@@ -1,4 +1,4 @@
-.row { 
+.row {
   @include outer-container; @include clearfix;
 
   .one { @include span-columns(1 of 12); }
